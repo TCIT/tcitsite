@@ -356,3 +356,22 @@ article.post .post-date .day {
 body.boxed .body {
 	border-top-color: #00a651;
 }
+
+/*TCT: TCIT CUSTOM CSS*/
+
+section#clients-section.highlight{
+  background-color: white !important;
+  border-color: white !important;
+}
+
+section.highlight .h2-black{
+  color: #121214;
+}
+
+#clients .thumb-info .thumb-info-title{
+  background: none;
+}
+
+#clients .thumb-info .thumb-info-type{
+  margin-top: 0px;
+}
