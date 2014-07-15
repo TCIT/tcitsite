@@ -362,6 +362,7 @@ body.boxed .body {
 section#clients-section.highlight{
   background-color: white !important;
   border-color: white !important;
+  -webkit-transform-style: preserve-3d;
 }
 
 section.highlight .h2-black{
@@ -372,6 +373,9 @@ section.highlight .h2-black{
   background: none;
 }
 
-#clients .thumb-info .thumb-info-type{
-  margin-top: 0px;
+#clients .thumb-info .thumb-info-type{;
+}
+
+#clients ul.portfolio-list .portfolio-item{
+  border-color: #ddd !important;
 }
