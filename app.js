@@ -14,6 +14,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.engine('html', require('ejs').renderFile);
+app.engine('xml', require('ejs').renderFile);
 
 app.use(favicon());
 app.use(logger('dev'));

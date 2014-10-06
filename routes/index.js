@@ -6,4 +6,9 @@ router.get('/', function(req, res) {
   res.render('index-one-page.html');
 });
 
+/* GET site map. */
+router.get('/sitemap', function(req, res) {
+  res.render('sitemap.xml');
+});
+
 module.exports = router;
