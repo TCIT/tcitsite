@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 app.engine('html', require('ejs').renderFile);
 app.engine('xml', require('ejs').renderFile);
 
-app.use(favicon());
+app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
