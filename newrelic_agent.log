@@ -165,3 +165,9 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Tomass-MacBook-Pro.local","pid":57808,"time":"2015-11-17T02:51:27.460Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Tomass-MacBook-Pro.local","pid":57808,"time":"2015-11-17T02:51:30.495Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Tomass-MacBook-Pro.local","pid":57808,"time":"2015-11-17T02:51:30.496Z","msg":"Connected to collector-139.newrelic.com:443 with agent run ID 22261322843756200.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19936,"time":"2016-01-15T12:28:43.902Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19936,"time":"2016-01-15T12:28:47.324Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19936,"time":"2016-01-15T12:28:47.325Z","msg":"Connected to collector-196.newrelic.com:443 with agent run ID 47863064799262622.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19982,"time":"2016-01-15T12:29:17.135Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19982,"time":"2016-01-15T12:29:20.089Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19982,"time":"2016-01-15T12:29:20.091Z","msg":"Connected to collector-196.newrelic.com:443 with agent run ID 47863064799264154.","component":"collector_api"}
