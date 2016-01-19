@@ -171,3 +171,6 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19982,"time":"2016-01-15T12:29:17.135Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19982,"time":"2016-01-15T12:29:20.089Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"fabian","pid":19982,"time":"2016-01-15T12:29:20.091Z","msg":"Connected to collector-196.newrelic.com:443 with agent run ID 47863064799264154.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Tomass-MBP.iptv.microsoft.com","pid":63544,"time":"2016-01-19T17:47:42.796Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Tomass-MBP.iptv.microsoft.com","pid":63544,"time":"2016-01-19T17:47:45.868Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Tomass-MBP.iptv.microsoft.com","pid":63544,"time":"2016-01-19T17:47:45.869Z","msg":"Connected to collector-196.newrelic.com:443 with agent run ID 48210351579572653.","component":"collector_api"}
