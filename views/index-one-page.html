@@ -62,7 +62,7 @@
 	<body class="one-page" data-target=".single-menu" data-spy="scroll" data-offset="200">
 		<div class="body">
 			<header id="header" class="single-menu flat-menu">
-				<div id="lng-switch"><img src="img/spanish.png"></div>
+				<div id="lng-switch"><span></span></div>
 				<div class="container">
 					<h1 class="logo">
 						<a href="/">
@@ -1511,7 +1511,7 @@
 
 		<!-- i18n -->
 		<script>
-      var init = function(lng, imageSrc) {
+      var init = function(lng) {
 	      i18next.init({
 	        lng: lng,
 	        resources: {
@@ -1538,7 +1538,7 @@
 	      });
 
 	      $('#lng-switch').data('lng', lng);
-	      $('#lng-switch img').attr('src', 'img/' + imageSrc + '.png');
+	      $('#lng-switch span').text(lng);
       }
 
       $('#lng-switch').click(function() {
@@ -1552,11 +1552,10 @@
       	}
       	var currentLanguage = $('#lng-switch').data('lng')
       	var otherLanguage = languageSwitcher[currentLanguage];
-      	var otherImgSrc = imageSrc[otherLanguage];
-      	init(otherLanguage, otherImgSrc);
+      	init(otherLanguage);
       })
 
-      init('es', 'spanish');
+      init('es');
     </script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
