@@ -4,9 +4,10 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Version: 		3.1.0
 */
 
+"use strict";
+
 (function() {
 
-	"use strict";
 
 	var Home = {
 

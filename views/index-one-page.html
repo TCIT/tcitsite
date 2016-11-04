@@ -58,7 +58,6 @@
 		<!--[if lte IE 8]>
 			<script src="vendor/respond.js"></script>
 		<![endif]-->
-
 	</head>
 	<body class="one-page" data-target=".single-menu" data-spy="scroll" data-offset="200">
 
@@ -84,10 +83,10 @@
 						<nav class="nav-main">
 							<ul class="nav nav-pills nav-main" id="mainMenu">
 								<li class="dropdown active">
-									<a data-hash class="dropdown-toggle" href="#home">Home</a>
+									<a data-hash class="dropdown-toggle" data-i18n="home" href="#home"></a>
 								</li>
 								<li>
-									<a data-hash href="#projects">Latest Projects</a>
+									<a data-hash href="#projects" data-i18n="latestProjects">Latest Projects</a>
 								</li>
 								<li>
 									<a data-hash href="#features">Methodology</a>
@@ -1506,6 +1505,39 @@
 		
 		<!-- Custom JS -->
 		<script src="js/custom.js"></script>
+		
+    <script src="js/i18next.min.js" ></script>
+    <script src="js/jquery-i18next.min.js" ></script>
+
+		<!-- i18n -->
+		<script>
+      // use plugins and options as needed, for options, detail see
+      // http://i18next.com/docs/
+      i18next.init({
+        lng: 'es', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
+        resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
+          en: {
+            translation: {
+            	latestProjects: 'latest projects',
+              home: 'home'
+            }
+          },
+          es: {
+            translation: {
+              home: 'inicio',
+            	latestProjects: 'Últimos proyectos'
+            }
+          }
+        }
+      }, function(err, t) {
+        // for options see
+        // https://github.com/i18next/jquery-i18next#initialize-the-plugin
+        jqueryI18next.init(i18next, $);
+        // start localizing, details:
+        // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+        $(document).localize();
+      });
+    </script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script type="text/javascript">
