@@ -79,6 +79,7 @@
 							<li class="facebook"><a href="https://www.facebook.com/tcitwebsolutions" target="_blank" title="Facebook">Facebook</a></li>
 							<li class="twitter"><a href="https://twitter.com/tcitsolutions" target="_blank" title="Twitter">Twitter</a></li>
 							<li class="linkedin"><a href="https://www.linkedin.com/company/tcit-web-solutions" target="_blank" title="Linkedin">Linkedin</a></li>
+							<li id="lng-switch" class="linkedin"><a href="#" title="Idioma">Idioma</a></li>
 						</ul>
 						<nav class="nav-main">
 							<ul class="nav nav-pills nav-main" id="mainMenu">
@@ -1511,32 +1512,42 @@
 
 		<!-- i18n -->
 		<script>
-      // use plugins and options as needed, for options, detail see
-      // http://i18next.com/docs/
-      i18next.init({
-        lng: 'es', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
-        resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
-          en: {
-            translation: {
-            	latestProjects: 'latest projects',
-              home: 'home'
-            }
-          },
-          es: {
-            translation: {
-              home: 'inicio',
-            	latestProjects: 'Últimos proyectos'
-            }
-          }
-        }
-      }, function(err, t) {
-        // for options see
-        // https://github.com/i18next/jquery-i18next#initialize-the-plugin
-        jqueryI18next.init(i18next, $);
-        // start localizing, details:
-        // https://github.com/i18next/jquery-i18next#usage-of-selector-function
-        $(document).localize();
-      });
+      var init = function(lng) {
+	      i18next.init({
+	        lng: lng,
+	        resources: {
+	          en: {
+	            translation: {
+	            	latestProjects: 'latest projects',
+	              home: 'home'
+	            }
+	          },
+	          es: {
+	            translation: {
+	              home: 'inicio',
+	            	latestProjects: 'Últimos proyectos'
+	            }
+	          }
+	        }
+	      }, function(err, t) {
+	        jqueryI18next.init(i18next, $);
+	        $(document).localize();
+	      });
+
+	      $('#lng-switch').data('lng', lng);
+      }
+
+      $('#lng-switch').click(function() {
+      	var switcher = {
+      		en: 'es',
+      		es: 'en'
+      	}
+      	var currentLanguage = $('#lng-switch').data('lng')
+      	var otherLanguage = switcher[currentLanguage];
+      	init(otherLanguage);
+      })
+
+      init('en');
     </script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
