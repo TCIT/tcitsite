@@ -273,3 +273,9 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"MBP-de-Felipe-5","pid":31892,"time":"2016-11-04T17:40:10.531Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"MBP-de-Felipe-5","pid":31892,"time":"2016-11-04T17:40:15.525Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"MBP-de-Felipe-5","pid":31892,"time":"2016-11-04T17:40:15.526Z","msg":"Connected to collector-177.newrelic.com:443 with agent run ID 129655386791268340.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"air-de-edmundo","pid":58821,"time":"2016-11-04T20:05:26.103Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"air-de-edmundo","pid":58821,"time":"2016-11-04T20:05:29.127Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"air-de-edmundo","pid":58821,"time":"2016-11-04T20:05:29.129Z","msg":"Connected to collector-177.newrelic.com:443 with agent run ID 110080862887180203.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"air-de-edmundo","pid":58864,"time":"2016-11-04T20:11:25.385Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"air-de-edmundo","pid":58864,"time":"2016-11-04T20:11:28.143Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"air-de-edmundo","pid":58864,"time":"2016-11-04T20:11:28.144Z","msg":"Connected to collector-177.newrelic.com:443 with agent run ID 110080862887213648.","component":"collector_api"}
