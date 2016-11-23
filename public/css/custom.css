@@ -1,11 +1,21 @@
 /* Add here all your CSS customizations */
 #lng-switch{
   /*padding: 10px;*/
-  position: fixed;
+  /*position: fixed;
   top: 10px;
   right: 20px;
   cursor: pointer;
+  text-transform: uppercase;*/
+  padding: 10px;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
   text-transform: uppercase;
+  /* padding: 5px; */
+  border: 1px solid gray;
+  background-color: white;
+  z-index: 100;
 }
 #lng-switch:hover{
   text-decoration: underline;
