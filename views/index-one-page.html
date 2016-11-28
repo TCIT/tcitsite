@@ -1578,6 +1578,10 @@ https://test-drive-servest.herokuapp.com/" class="btn btn-primary" data-i18n="li
 
 		<!-- i18n -->
 		<script>
+      var languageSwitcher = {
+        en: 'es',
+        es: 'en',
+      }
       var init = function(lng) {
       	// FR: translator dictionary. To add a translation do:
       	// 1: add data-i18n="<key>" to the html tag you want to translate
@@ -1585,7 +1589,7 @@ https://test-drive-servest.herokuapp.com/" class="btn btn-primary" data-i18n="li
 	      i18next.init({
 	        lng: lng,
 	        resources: {
-	          es: {
+	          en: {
 	            translation: {
 	              AboutTCIT: 'About TCIT',
 	              accountsPayable_:'accounts payable phone calls!',
@@ -1746,7 +1750,7 @@ https://test-drive-servest.herokuapp.com/" class="btn btn-primary" data-i18n="li
 	              YouWillNever_: ' You will never see a late delivery.'
 	            }
 	          },
-	          en: {
+	          es: {
 	            translation: {
 	            	AboutTCIT: 'Acerca de TCIT',
 	            	accountsPayable_:'cuentas de teléfono por pagar!',
@@ -1916,19 +1920,11 @@ https://test-drive-servest.herokuapp.com/" class="btn btn-primary" data-i18n="li
 	      });
 
 	      $('#lng-switch').data('lng', lng);
-	      $('#lng-switch span').text(lng);
+	      $('#lng-switch span').text(languageSwitcher[lng]);
       }
 
       $('#lng-switch').click(function() {
-      	var languageSwitcher = {
-      		en: 'es',
-      		es: 'en',
-      	}
-      	var imageSrc = {
-      		en: 'spanish',
-      		es: 'english'
-      	}
-      	var currentLanguage = $('#lng-switch').data('lng')
+      	var currentLanguage = $('#lng-switch').data('lng');
       	var otherLanguage = languageSwitcher[currentLanguage];
       	init(otherLanguage);
       })
