@@ -1883,7 +1883,7 @@ https://test-drive-servest.herokuapp.com/" class="btn btn-primary" data-i18n="li
 	            	ThisWebappIs_:'Esta aplicación web es única en su tipo. Facilita el proceso de elaboración, almacenamiento e inventario de alimentos. Si usted cocina en donde sirve esta es la solución perfecta.',
 	            	Tomas_: 'Tomás, nuestro amado gerente y fundador, tiene un profundo conocimiento de las tecnologías de punta y cuenta con sólidos antecedentes profesionales. Le encantará trabajar con él.',
 	            	topNotch_ : ' Nuestra receta sólo cuenta con tecnologías de punta.',
-	            	touch: 'contacto',
+	            	touch: 'contacto',	
 	              	twentyFourBySeven: 'Disponibilidad 24x7',
 	              	UsedByPrivate_: ' Esta aplicación, utilizada por empresas concesionarias del transporte público en Chile, ha transformado la industria del transporte en el país',
 	              	WhatIsFascinating_: 'Lo que resulta fascinante de esta apliación es su modelo de datos. Reúne la experiencia de los mejores consultores y expertos en el campo de los recursos humanos. Con ello, esta aplicación resulta perfecta para cualquier industria.',
@@ -1921,12 +1921,12 @@ https://test-drive-servest.herokuapp.com/" class="btn btn-primary" data-i18n="li
 
       $('#lng-switch').click(function() {
       	var languageSwitcher = {
-      		en: 'en',
-      		es: 'es',
+      		en: 'es',
+      		es: 'en',
       	}
       	var imageSrc = {
-      		en: 'english',
-      		es: 'spanish'
+      		en: 'spanish',
+      		es: 'english'
       	}
       	var currentLanguage = $('#lng-switch').data('lng')
       	var otherLanguage = languageSwitcher[currentLanguage];
