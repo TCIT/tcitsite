@@ -9,3 +9,7 @@
 #lng-switch:hover{
   text-decoration: underline;
 }
+/*RIH: Necesario para evitar 'desbordamiento' indeseado en las team cards*/
+.fixed-height{
+  height: 497px;
+}
