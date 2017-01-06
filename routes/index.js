@@ -55,8 +55,8 @@ router.get('/sitemap', function(req, res) {
 });
 
 /* GET site map. */
-router.get('/.well-known/acme-challenge/OL5k_u0n56RNdYcnXyAIoMecMHm8JxOmT185WRpes7g', function(req, res) {
-  res.send('OL5k_u0n56RNdYcnXyAIoMecMHm8JxOmT185WRpes7g.JUwO1wN4w_UaFzNZeFNat-VuZKo028zgvQEAxChE36k');
+router.get('/.well-known/acme-challenge/2QScncqgUFf1d_M0ydXuIe8tyXrvIS48l2N6Uf7lDBc', function(req, res) {
+  res.send('2QScncqgUFf1d_M0ydXuIe8tyXrvIS48l2N6Uf7lDBc.JUwO1wN4w_UaFzNZeFNat-VuZKo028zgvQEAxChE36k');
 });
 
 module.exports = router;
