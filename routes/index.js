@@ -54,4 +54,9 @@ router.get('/sitemap', function(req, res) {
   res.render('sitemap.xml');
 });
 
+/* GET site map. */
+router.get('/.well-known/acme-challenge/2QScncqgUFf1d_M0ydXuIe8tyXrvIS48l2N6Uf7lDBc', function(req, res) {
+  res.send('2QScncqgUFf1d_M0ydXuIe8tyXrvIS48l2N6Uf7lDBc.JUwO1wN4w_UaFzNZeFNat-VuZKo028zgvQEAxChE36k');
+});
+
 module.exports = router;
