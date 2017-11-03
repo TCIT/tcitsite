@@ -14,3 +14,9 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":13804,"time":"2017-11-02T12:16:27.343Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":13804,"time":"2017-11-02T12:16:31.401Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":13804,"time":"2017-11-02T12:16:31.401Z","msg":"Connected to collector-238.newrelic.com:443 with agent run ID 430552595950286585.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":7516,"time":"2017-11-03T11:48:48.310Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":40,"name":"newrelic","hostname":"Sebastian","pid":7516,"time":"2017-11-03T11:49:49.890Z","msg":"No connection has been established to New Relic after 4 attempts.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":7516,"time":"2017-11-03T11:50:53.424Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/690134/applications/3993232","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":7516,"time":"2017-11-03T11:50:53.425Z","msg":"Connected to collector-238.newrelic.com:443 with agent run ID 430552595961214089.","component":"collector_api"}
+{"v":0,"level":50,"name":"newrelic","hostname":"Sebastian","pid":7516,"time":"2017-11-03T18:16:12.309Z","msg":"Calling metric_data on New Relic failed unexpectedly. Data will be held until it can be submitted:","syscall":"read","errno":"ECONNRESET","code":"ECONNRESET","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Sebastian","pid":7516,"time":"2017-11-03T18:16:12.309Z","msg":"Error on submission to New Relic (data held for redelivery):","syscall":"read","errno":"ECONNRESET","code":"ECONNRESET"}
