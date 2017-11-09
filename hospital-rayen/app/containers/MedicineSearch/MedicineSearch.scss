@@ -1,0 +1,15 @@
+.autocomplete-list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  z-index: 999999;
+}
+.action-panel, .md-tabs-container {
+  min-height: 350px;
+}
+
+
+.md-tabs {
+  border-bottom: 1px solid #CCC;
+}
