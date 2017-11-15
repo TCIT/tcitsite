@@ -59,4 +59,8 @@ router.get('/.well-known/acme-challenge/2QScncqgUFf1d_M0ydXuIe8tyXrvIS48l2N6Uf7l
   res.send('2QScncqgUFf1d_M0ydXuIe8tyXrvIS48l2N6Uf7lDBc.JUwO1wN4w_UaFzNZeFNat-VuZKo028zgvQEAxChE36k');
 });
 
+router.get('/gestion_agricola', function(req, res) {
+  res.render('farm-manager.html');
+});
+
 module.exports = router;
