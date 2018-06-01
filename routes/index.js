@@ -15,7 +15,6 @@ router.post('/contact-email', function(req, res) {
   var transporter = nodemailer.createTransport(smtpTransport({
       host: 'email-smtp.us-west-2.amazonaws.com',
       port: 587,
-      ignoreTLS: true,
       auth: {
           user: 'AKIAJ56FMOBHSFUBSHMQ',
           pass: 'AksBNZ4JPUTqc2saOUBxjzckPwPQ2sAKi/q0O9gT6rAU'
