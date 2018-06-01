@@ -13,12 +13,12 @@ router.post('/contact-email', function(req, res) {
 
   // create reusable transporter object using SMTP transport/ TCT: Using SMPT transporter
   var transporter = nodemailer.createTransport(smtpTransport({
-      host: 'smtp.ipage.com',
+      host: 'email-smtp.us-west-2.amazonaws.com',
       port: 587,
       ignoreTLS: true,
       auth: {
-          user: 'no-reply@tcit.cl',
-          pass: 'Gransayaman1'
+          user: 'AKIAJ56FMOBHSFUBSHMQ',
+          pass: 'AksBNZ4JPUTqc2saOUBxjzckPwPQ2sAKi/q0O9gT6rAU'
       }
   }));
 
@@ -27,7 +27,7 @@ router.post('/contact-email', function(req, res) {
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-      from: req.body.name+' <'+req.body.email+'>', // sender address
+      from: 'No Reply <no-reply@tcit.cl>', // sender address
       to: 'contact@tcit.cl', // list of receivers
       subject: req.body.subject, // Subject line
       text: req.body.body, // plaintext body
