@@ -28,7 +28,7 @@ router.post('/contact-email', function(req, res) {
   var mailOptions = {
       from: 'No Reply <no-reply@tcit.cl>', // sender address
       to: 'contact@tcit.cl', // list of receivers
-      subject: req.body.subject, // Subject line
+      subject: req.body.subject + ' Nombre contact: ' + req.body.name, // Subject line
       text: req.body.body, // plaintext body
       html: '<b>'+req.body.message+'</b>' // html body
   };
