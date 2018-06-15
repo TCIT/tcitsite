@@ -16,8 +16,8 @@ router.post('/contact-email', function(req, res) {
       host: 'email-smtp.us-west-2.amazonaws.com',
       port: 587,
       auth: {
-          user: 'AKIAJ56FMOBHSFUBSHMQ',
-          pass: 'AksBNZ4JPUTqc2saOUBxjzckPwPQ2sAKi/q0O9gT6rAU'
+          user: process.env.SES_KEY,
+          pass: process.env.SES_SECRET
       }
   }));
 
